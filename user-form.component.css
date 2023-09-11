@@ -1,0 +1,74 @@
+body.all {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana,Tahoma,sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(10, 3, 145) 0%, rgba(7, 7, 188, 0.621) 35%, rgb(185, 219, 255) 100%);
+    border-radius:20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+   padding-top: 50px;
+    height: 300px;
+    padding: 100px;
+    margin: 300px;
+
+    
+}
+body.img-fundo{
+    width: 1000px; 
+    height: 1000px; 
+    background-image: url('img_backgroud.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.section.form {
+    background-color: #d2f5d3;
+    padding: 20px;
+    border-radius: 2    px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100px;
+}
+
+.titulo {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.validation-error {
+    color: #ff0000;
+    margin-top: 5px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(10, 3, 145);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #9593d5;
+}

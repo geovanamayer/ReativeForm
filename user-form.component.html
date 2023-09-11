@@ -1,0 +1,37 @@
+<body class="all">
+    
+    <div class="img-fundo"></div>
+
+    <section class="form">
+      
+        <h1 class="titulo">Form</h1>
+        
+        <form (ngSubmit)="submit()" [formGroup]="userForm" #formDir="ngForm">
+           
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Insira seu nome" formControlName="name" required />
+                <div *ngIf="name.invalid && formDir.submitted" class="validation-error">
+                    <p *ngIf="name.errors?.['required']">Campo obrigatório!</p>
+                </div>
+            </div>
+        
+            <br>
+        
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Insira seu e-mail" formControlName="email" required />
+                <div *ngIf="email.invalid && formDir.submitted" class="validation-error">
+                    <p *ngIf="email.errors?.['required']">Campo obrigatório!</p>
+                    <p *ngIf="email.errors?.['email']">Informe um e-mail válido!</p>
+                </div>
+            </div>
+        
+            <br>
+        
+        </form>
+
+        <button (click)="submit()">Enviar</button>
+
+    </section>
+    <!-- <img src="img_backgroud.jpg"> -->
+</body>
+
